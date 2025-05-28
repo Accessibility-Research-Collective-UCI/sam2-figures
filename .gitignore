@@ -264,3 +264,4 @@ demo/backend/checkpoints/*.pt
 dataset/*
 finetuned-models/*
 test-images/*
+examples/*
