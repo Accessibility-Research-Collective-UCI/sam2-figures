@@ -53,6 +53,7 @@ class SAM2AutomaticMaskGenerator:
         output_mode: str = "binary_mask",
         use_m2m: bool = False,
         multimask_output: bool = True,
+        load_model: str = None,
         **kwargs,
     ) -> None:
         """
@@ -134,6 +135,11 @@ class SAM2AutomaticMaskGenerator:
             max_hole_area=min_mask_region_area,
             max_sprinkle_area=min_mask_region_area,
         )
+
+        # load a fine-tuned model
+        if (load_model is not None):
+            self.predictor.model.load_state_dict(torch.load(load_model))
+        
         self.points_per_batch = points_per_batch
         self.pred_iou_thresh = pred_iou_thresh
         self.stability_score_thresh = stability_score_thresh
