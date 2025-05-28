@@ -16,7 +16,7 @@ source /home/kapilg/.local/share/virtualenvs/sam2-figures-new-Bvxz5dCi/bin/activ
 cd /home/kapilg/projects/sam2-figures-new/
 
 # run notebook
-jupyter notebook --no-browser --port=9585
+jupyter notebook --no-browser --port=9585 --NotebookApp.iopub_data_rate_limit=1.0e10
 
 # deactivate environment
 exit
