@@ -20,6 +20,8 @@ matplotlib = "*"
 ipywidgets = "*"
 widgetsnbextension = "*"
 datasets = "*"
+beautifulsoup4 = "*"
+requests = "*"
 
 [dev-packages]
 black = {extras = ["jupyter"], version = "*"}
