@@ -265,3 +265,7 @@ dataset/*
 finetuned-models/*
 test-images/*
 examples/*
+*.png
+*.jpg
+*.webp
+*.pdf
