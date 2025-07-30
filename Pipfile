@@ -3,6 +3,11 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+[[source]]
+url = "https://www.paddlepaddle.org.cn/packages/stable/cu126/"
+verify_ssl = true
+name = "wwwpaddlepaddleorg"
+
 [packages]
 torch = "*"
 torchvision = "*"
@@ -22,6 +27,13 @@ widgetsnbextension = "*"
 datasets = "*"
 beautifulsoup4 = "*"
 requests = "*"
+paddlepaddle-gpu = {version = "==3.1.0", index = "wwwpaddlepaddleorg"}
+paddleocr = "*"
+ultralytics = "*"
+python-dotenv = "*"
+google-api-python-client = "*"
+google-auth-httplib2 = "*"
+google-auth-oauthlib = "*"
 
 [dev-packages]
 black = {extras = ["jupyter"], version = "*"}
