@@ -104,9 +104,9 @@ class SAM2AutomaticMaskGenerator:
           multimask_output (bool): Whether to output multimask at each point of the grid.
         """
 
-        assert (points_per_side is None) != (
-            point_grids is None
-        ), "Exactly one of points_per_side or point_grid must be provided."
+        assert (points_per_side is None) != (point_grids is None), (
+            "Exactly one of points_per_side or point_grid must be provided."
+        )
         if points_per_side is not None:
             self.point_grids = build_all_layer_point_grids(
                 points_per_side,
@@ -137,9 +137,9 @@ class SAM2AutomaticMaskGenerator:
         )
 
         # load a fine-tuned model
-        if (load_model is not None):
+        if load_model is not None:
             self.predictor.model.load_state_dict(torch.load(load_model))
-        
+
         self.points_per_batch = points_per_batch
         self.pred_iou_thresh = pred_iou_thresh
         self.stability_score_thresh = stability_score_thresh
