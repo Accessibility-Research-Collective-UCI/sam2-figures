@@ -16,7 +16,6 @@ numpy = "*"
 tqdm = "*"
 hydra-core = "*"
 iopath = "*"
-pillow = "*"
 opencv-python = "*"
 pandas = "*"
 notebook = "*"
@@ -31,9 +30,7 @@ paddlepaddle-gpu = {version = "==3.1.0", index = "wwwpaddlepaddleorg"}
 paddleocr = "*"
 ultralytics = "*"
 python-dotenv = "*"
-google-api-python-client = "*"
-google-auth-httplib2 = "*"
-google-auth-oauthlib = "*"
+pillow = "*"
 
 [dev-packages]
 black = {extras = ["jupyter"], version = "*"}
