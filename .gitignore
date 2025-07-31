@@ -261,6 +261,7 @@ outputs/*
 checkpoints/*.pt
 demo/backend/checkpoints/*.pt
 
+ACL-fig/*
 dataset/*
 finetuned-models/*
 test-images/*
@@ -269,3 +270,5 @@ examples/*
 *.jpg
 *.webp
 *.pdf
+*.json
+*.csv
